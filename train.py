@@ -67,7 +67,7 @@ the audio in the 'other' folder would be used to train an 'unknown' category.
 
 To pull this all together, you'd run:
 
-bazel run tensorflow/examples/speech_commands:train -- \
+bazel run tensorflow/examples/speech_commands:train -- 
 --data_dir=my_wavs --wanted_words=up,down
 
 """
@@ -81,12 +81,12 @@ import sys
 
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
+import tensorflow as tf 
 
 import input_data
 import models
 from tensorflow.python.platform import gfile
-from tensorflow.contrib import slim as slim 
+from tensorflow.contrib import slim as slim
 
 FLAGS = None
 
